@@ -12156,7 +12156,6 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libwfdnative.so",
             ],
             shared_libs: [
-                "libinput_shim",
                 "libandroid_runtime",
                 "libui",
                 "libinput",
@@ -12660,7 +12659,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk",
+    name: "vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk",
     owner: "oneplus",
     strip: {
         none: true,
@@ -12668,7 +12667,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so",
+                "proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V2-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -15914,12 +15913,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "wfdservice64",
+    name: "wfdservice",
     owner: "oneplus",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/system_ext/bin/wfdservice64",
+                "proprietary/system_ext/bin/wfdservice",
             ],
             shared_libs: [
                 "liblog",
